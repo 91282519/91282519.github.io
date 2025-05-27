@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Registro de Asistencia</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <div class="container">
+    <h1>Registro de Asistencia</h1>
+
+    <form id="attendanceForm">
+      <label for="fullName">Nombres y Apellidos:</label>
+      <input type="text" id="fullName" placeholder="Juan Pérez" required />
+
+      <label for="date">Fecha:</label>
+      <input type="date" id="date" required />
+
+      <label for="subject">Asignatura:</label>
+      <input type="text" id="subject" placeholder="Matemáticas" required />
+
+      <div class="buttons">
+        <button type="submit" id="saveBtn">Guardar</button>
+        <button type="button" id="clearBtn">Borrar</button>
+      </div>
+    </form>
+
+    <h2>Listado de Asistencias</h2>
+    <table id="attendanceTable">
+      <thead>
+        <tr>
+          <th>Nombres y Apellidos</th>
+          <th>Fecha</th>
+          <th>Asignatura</th>
+          <th>Acción</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Filas se generan aquí -->
+      </tbody>
+    </table>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
